@@ -1,0 +1,17 @@
+---
+keys:
+- https://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc
+repos:
+- deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
+packages:
+- build-essential
+- redis-tools
+- postgresql-9.6
+- postgresql-client-9.6
+- python2.7-dev
+- python3-dev
+- python-yaml
+- python-websocket
+- python-pip
+- tree
+- tmux 

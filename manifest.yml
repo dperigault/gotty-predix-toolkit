@@ -1,0 +1,10 @@
+---
+applications:
+- name: gotty-custom
+  memory: 128M
+  instances: 1
+  random-route: true
+  path: .
+  buildpack: https://github.com/cloudfoundry/multi-buildpack
+  command: $HOME/gotty -p "$PORT" -w  /bin/bash
+
