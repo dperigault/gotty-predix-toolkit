@@ -1,9 +1,14 @@
 source /home/vcap/.bashrc
 
+# check if deps folder exist in this location, if not it will set the variable accordingly
+if [ ! -d "/home/vcap/deps" ]; then
+ export DEPS_DIR="/home/vcap/app/.deps"
+fi
+
 # Needed for apt-buildpack install of psql
 export PERLLIB="{$DEPS_DIR}/0/apt/usr/share/perl5"
-export PATH="${DEPS_DIR}/0/apt/usr/local/bin:${DEPS_DIR}/0/apt/usr/lib/postgresql/9.6/bin:${PATH}"
-export LD_LIBRARY_PATH="/home/vcap/deps/0/lib"
+export PATH="${DEPS_DIR}/0/apt/usr/local/bin:${DEPS_DIR}/0/apt/usr/lib/postgresql/9.6/bin:${DEPS_DIR}/0/bin:${PATH}"
+export LD_LIBRARY_PATH="${DEPS_DIR}/0/lib"
 export TERM=xterm
 
 
