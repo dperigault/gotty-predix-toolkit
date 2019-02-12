@@ -1,4 +1,5 @@
 #!/bin/bash
-curl -s -L -o "$HOME/linux_amd64.tar.gz" "https://github.com/yudai/gotty/releases/download/v0.0.11/linux_amd64.tar.gz"
-tar zxf "$HOME/linux_amd64.tar.gz"
+echo "installing Gotty"
+curl -s -L -o "$HOME/gotty_linux_amd64.tar.gz" "https://github.com/yudai/gotty/releases/download/v1.0.1/gotty_linux_amd64.tar.gz"
+tar zvxf "$HOME/gotty_linux_amd64.tar.gz" -C "$HOME"
 chmod 755 "$HOME/gotty"
