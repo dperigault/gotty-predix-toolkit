@@ -1,10 +1,10 @@
 ---
 applications:
-- name: gotty-custom
-  memory: 128M
+- name: gotty-secure-test
+  memory: 512M
   instances: 1
   random-route: true
   path: .
   buildpack: https://github.com/cloudfoundry/multi-buildpack
-  command: $HOME/gotty -p "$PORT" -w  /bin/bash
+  command: $HOME/gotty -p "$PORT" -c "admin:supporttoto" -w  /bin/bash
 

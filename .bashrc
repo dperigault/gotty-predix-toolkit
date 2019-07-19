@@ -11,6 +11,10 @@ export PATH="${DEPS_DIR}/0/apt/usr/local/bin:${DEPS_DIR}/0/apt/usr/lib/postgresq
 export LD_LIBRARY_PATH="${DEPS_DIR}/0/lib"
 export TERM=xterm
 
+#clean bash history if exist
+
+ rm /home/vcap/app/.bash_history 2> /dev/null
+
 
 # Needed for apt-buildpack install of python 2.7 and pip
 export PYTHONHOME="${DEPS_DIR}/0/apt/usr"
