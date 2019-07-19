@@ -1,6 +1,6 @@
 ---
 applications:
-- name: gotty-secure-test
+- name: gotty-custom
   memory: 512M
   instances: 1
   random-route: true
