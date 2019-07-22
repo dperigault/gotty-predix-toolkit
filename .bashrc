@@ -17,9 +17,9 @@ export TERM=xterm
 
 
 # Needed for apt-buildpack install of python 2.7 and pip
-export PYTHONHOME="${DEPS_DIR}/0/apt/usr"
-export CPATH="${DEPS_DIR}/0/apt/usr/include/python2.7:${DEPS_DIR}/0/apt/usr/include"
-export PYTHONIOENCODING=utf8
+#export PYTHONHOME="${DEPS_DIR}/0/apt/usr"
+#export CPATH="${DEPS_DIR}/0/apt/usr/include/python2.7:${DEPS_DIR}/0/apt/usr/include"
+#export PYTHONIOENCODING=utf8
 
 # Preferences
 export EDITOR=vim
